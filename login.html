@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Public Record</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&amp;family=IBM+Plex+Mono:wght@400&amp;family=IBM+Plex+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="login-bar">
+  <a class="brand" href="index.html" data-brand>Public Record</a>
+</header>
+
+<main id="main" class="login">
+  <h1>Sign in</h1>
+  <p>We send a link to the email on file for your organization. No password.</p>
+  <!-- Mock only: any email goes straight to portal.html. The owner will replace this with a real emailed link. -->
+  <form action="portal.html" method="get" class="form" id="login-form">
+    <div class="field">
+      <label for="login-email">Email address</label>
+      <input id="login-email" name="email" type="email" autocomplete="email" required aria-describedby="login-email-error">
+      <p class="error" id="login-email-error" hidden></p>
+    </div>
+    <button class="button" type="submit">Send me a link</button>
+  </form>
+  <p class="small">Not with us yet? <a href="index.html#contact">Get your page.</a></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
